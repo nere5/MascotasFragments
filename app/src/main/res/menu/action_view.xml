@@ -9,5 +9,4 @@
         android:icon="@drawable/ic_favorite"
         app:showAsAction="always">
     </item>
-
 </menu>
