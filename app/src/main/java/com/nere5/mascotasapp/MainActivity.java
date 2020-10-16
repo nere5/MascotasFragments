@@ -19,8 +19,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    ArrayList<Mascota> listaMascotas;
-    RecyclerView recyclerMascotas;
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
@@ -34,15 +32,6 @@ public class MainActivity extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         setUpViewPager();
-
-
-       /* listaMascotas = new ArrayList<Mascota>();
-        recyclerMascotas = (RecyclerView) findViewById(R.id.rcvMascotas);
-        recyclerMascotas.setLayoutManager(new LinearLayoutManager(this));
-        llenarMascotas();*/
-
-        /*  AdaptadorMascotas adapter = new AdaptadorMascotas(listaMascotas);
-        recyclerMascotas.setAdapter(adapter);*/
 
         if (toolbar != null){
             setSupportActionBar(toolbar);
@@ -60,15 +49,6 @@ public class MainActivity extends AppCompatActivity {
     private void setUpViewPager(){
         viewPager.setAdapter(new PageAdapter(getSupportFragmentManager(), agregarFragments()));
         tabLayout.setupWithViewPager(viewPager);
-    }
-
-    private void llenarMascotas() {
-        listaMascotas.add(new Mascota(R.drawable.mascota1, R.drawable.ic_like, "Rufo", "1", R.drawable.ic_num_likes));
-        listaMascotas.add(new Mascota(R.drawable.mascota2, R.drawable.ic_like, "Danger", "2", R.drawable.ic_num_likes));
-        listaMascotas.add(new Mascota(R.drawable.mascota3, R.drawable.ic_like, "Ginger", "3", R.drawable.ic_num_likes));
-        listaMascotas.add(new Mascota(R.drawable.mascota4, R.drawable.ic_like, "Arnold", "4", R.drawable.ic_num_likes));
-        listaMascotas.add(new Mascota(R.drawable.mascota5, R.drawable.ic_like, "Pepe", "5", R.drawable.ic_num_likes));
-
     }
 
     @Override
