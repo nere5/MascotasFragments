@@ -4,10 +4,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cdvMascotas"
     android:layout_height="wrap_content"
-    android:layout_width="match_parent"
-    android:layout_marginLeft="25dp"
-    android:layout_marginRight="25dp"
-    android:layout_marginTop="15dp"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_gravity="center_horizontal"
     app:cardCornerRadius="4dp"
     app:cardElevation="20dp">
 
@@ -19,7 +19,7 @@
         <ImageView
             android:id="@+id/imvMascota"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginBottom="25dp"
             android:src="@drawable/mascota1"
@@ -32,22 +32,6 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/icLike"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:src="@drawable/ic_like" />
-
-        <TextView
-            android:hint="Nombre Mascota"
-            android:id="@+id/txtNombreMascota"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@color/colorAccent"/>
 
         <TextView
             android:hint="4"

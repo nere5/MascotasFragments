@@ -15,6 +15,12 @@ public class Mascota {
         this.icNumLikes = icNumLikes;
     }
 
+    public Mascota(int fotoMascota, String numLikes, int icNumLikes) {
+        this.fotoMascota = fotoMascota;
+        this.numLikes = numLikes;
+        this.icNumLikes = icNumLikes;
+    }
+
     public int getFotoMascota() {
         return fotoMascota;
     }

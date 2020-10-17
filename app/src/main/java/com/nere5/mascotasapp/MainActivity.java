@@ -49,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
     private void setUpViewPager(){
         viewPager.setAdapter(new PageAdapter(getSupportFragmentManager(), agregarFragments()));
         tabLayout.setupWithViewPager(viewPager);
+
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_inicio);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_perro);
     }
 
     @Override
@@ -61,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()){
             case R.id.atvFavoritos:
-                Intent intent = new Intent(this, MascotasFavoritas.class);
+                Intent intent = new Intent(this, Biografia.class);
                 startActivity(intent);
                 break;
             case R.id.Contacto:
